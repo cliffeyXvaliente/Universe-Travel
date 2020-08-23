@@ -1,0 +1,53 @@
+        * {
+
+            padding: 0;
+            margin : 0;
+        }
+
+        body {
+
+            background         : url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
+            background-repeat  : no-repeat;
+            background-size    : cover;
+            background-position: center;
+            height             : 100vh;
+            width              : 100%;
+
+        }
+
+        @import "./flexbox";
+
+        #introduction {
+
+            height: 100vh;
+            width : 100%;
+            @include flexcenter(inherit);
+            background-color: rgba(0, 0, 0, 0.596);
+
+        }
+
+
+
+
+        .title {
+            font-family: 'Dosis', sans-serif;
+           font-size: medium;
+            height     : 40vh;
+            width      : 80%;
+
+            color         : white;
+            border-radius : 0.4rem;
+            letter-spacing: 1rem;
+
+            h1 {
+                padding: 4rem;
+
+            }
+
+            h3 {
+                padding: 2rem;
+
+            }
+
+            @include flexcenter (column);
+        }
