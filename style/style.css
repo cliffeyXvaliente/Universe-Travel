@@ -16,25 +16,12 @@
 .shadow {
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.507);
+  background-color: rgba(0, 0, 0, 0.705);
 }
 
 .introduction {
   height: 90vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: none;
-          flex-direction: none;
 }
 
 /*! NAVIGATION BAR FROM PAGE 1 */
@@ -42,7 +29,7 @@
   color: white;
   background-color: none;
   height: 10vh;
-  width: 100%;
+  width: 90%;
   background-color: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,16 +46,57 @@
           flex-direction: row;
 }
 
+.nav img {
+  height: 3rem;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav ul li {
+  list-style: none;
+  font-family: 'Dosis', sans-serif;
+}
+
+.nav ul li .lius {
+  border: white solid 2px;
+}
+
+.nav ul li .lius:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav ul li a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  padding: 1rem 2rem;
+  color: white;
+}
+
 .title {
   font-family: 'Dosis', sans-serif;
-  font-size: medium;
-  height: 40vh;
-  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  height: 60vh;
   color: white;
   border-radius: 0.4rem;
   letter-spacing: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  margin: auto;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -87,6 +115,51 @@
 }
 
 .title h3 {
-  padding: 2rem;
+  padding: 4rem;
+}
+
+/* MAKE RESPONSIVE INTRODUCTION */
+@media screen and (max-width: 900px) {
+  #introduction {
+    background-position: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: none;
+            flex-direction: none;
+  }
+  #introduction .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #introduction .nav img {
+    height: 2rem;
+  }
+  #introduction .nav li {
+    display: none;
+  }
+  #introduction .title {
+    text-align: center;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: none;
+    letter-spacing: 0.6rem;
+  }
+  #introduction .title h3 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

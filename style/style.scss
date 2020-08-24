@@ -1,7 +1,7 @@
         * {
 
-            padding: 0;
-            margin : 0;
+            padding   : 0;
+            margin    : 0;
             box-sizing: border-box;
         }
 
@@ -12,23 +12,23 @@
 
         /* Introduction 1 Page */
         #introduction {
-            background         : url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
-            background-repeat  : no-repeat;
-            background-size    : cover;
-          
+            background       : url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
+            background-repeat: no-repeat;
+            background-size  : cover;
+
         }
 
-        .shadow
-    {
-        height: 100vh;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.507);
-    }
+        .shadow {
+            height          : 100vh;
+            width           : 100%;
+            background-color: rgba(0, 0, 0, 0.705);
+        }
+
         .introduction {
 
             height: 90vh;
             width : 100%;
-            @include flexcenter(none);
+
         }
 
         /*! NAVIGATION BAR FROM PAGE 1 */
@@ -38,9 +38,50 @@
             color           : white;
             background-color: none;
             height          : 10vh;
-            width           : 100%;
+            width           : 90%;
+
+
+
+            img {
+                height: 3rem;
+                flex  : 0.5;
+
+            }
+
             background-color: none;
             @include flexcenter (row);
+
+            ul {
+                display        : flex;
+                justify-content: flex-end;
+                flex           : 1;
+
+
+                li {
+                    .lius {
+                        border: white solid 2px;
+
+                        &:hover {
+                            background-color: white;
+                            color           : black;
+
+                        }
+                    }
+
+                    a {
+                        text-decoration-line: none;
+                        padding             : 1rem 2rem;
+                        color               : white;
+
+
+                    }
+
+
+                    list-style : none;
+                    font-family: 'Dosis',
+                    sans-serif;
+                }
+            }
 
         }
 
@@ -50,14 +91,14 @@
 
 
         .title {
-            font-family: 'Dosis', sans-serif;
-            font-size  : medium;
-            height     : 40vh;
-            width      : 80%;
-
+            font-family   : 'Dosis', sans-serif;
+            display       : flex;
+            width         : 60%;
+            height        : 60vh;
             color         : white;
             border-radius : 0.4rem;
             letter-spacing: 1rem;
+            margin        : auto;
 
             h1 {
                 padding: 4rem;
@@ -65,9 +106,51 @@
             }
 
             h3 {
-                padding: 2rem;
+                padding: 4rem;
 
             }
 
             @include flexcenter (column);
+        }
+
+
+        /* MAKE RESPONSIVE INTRODUCTION */
+
+        @media screen and (max-width: 900px) {
+
+
+            #introduction {
+                background-position: left;
+
+                .nav {
+                    display       : flex;
+                    flex-direction: column;
+
+                    img {
+                        height: 2rem;
+                    }
+
+                    li {
+                        display: none;
+                    }
+                }
+
+                @include flexcenter (none);
+
+                .title {
+                    text-align: center;
+                    font-size : 1.2rem;
+                    text-align: center;
+                    padding   : none;
+
+                    letter-spacing: 0.6rem;
+
+                    h3 {
+                        display: none;
+                    }
+
+                }
+
+            }
+
         }
