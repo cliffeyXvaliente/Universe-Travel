@@ -4,34 +4,53 @@
             margin : 0;
         }
 
-        body {
 
-            background         : url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
-            background-repeat  : no-repeat;
-            background-size    : cover;
-            background-position: center;
-            height             : 100vh;
-            width              : 100%;
-
-        }
+        /* IMPORT FILES FROM SCSS FLEXBOX TO THIS FILE */
 
         @import "./flexbox";
 
+        /* Introduction 1 Page */
         #introduction {
+            background         : url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
+            background-repeat  : no-repeat;
+            background-size    : cover;
+          
+        }
 
-            height: 100vh;
+        .shadow
+    {
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.507);
+    }
+        .introduction {
+
+            height: 90vh;
             width : 100%;
-            @include flexcenter(inherit);
-            background-color: rgba(0, 0, 0, 0.596);
+            @include flexcenter(none);
+        }
+
+        /*! NAVIGATION BAR FROM PAGE 1 */
+
+        .nav {
+
+            color           : white;
+            background-color: none;
+            height          : 10vh;
+            width           : 100%;
+            background-color: none;
+            @include flexcenter (row);
 
         }
+
+
 
 
 
 
         .title {
             font-family: 'Dosis', sans-serif;
-           font-size: medium;
+            font-size  : medium;
             height     : 40vh;
             width      : 80%;
 

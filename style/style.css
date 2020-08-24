@@ -3,17 +3,22 @@
   margin: 0;
 }
 
-body {
+/* IMPORT FILES FROM SCSS FLEXBOX TO THIS FILE */
+/* Introduction 1 Page */
+#introduction {
   background: url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
 }
 
-#introduction {
+.shadow {
   height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.introduction {
+  height: 90vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,11 +29,32 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: inherit;
-  -webkit-box-direction: inherit;
-      -ms-flex-direction: inherit;
-          flex-direction: inherit;
-  background-color: rgba(0, 0, 0, 0.596);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
+}
+
+/*! NAVIGATION BAR FROM PAGE 1 */
+.nav {
+  color: white;
+  background-color: none;
+  height: 10vh;
+  width: 100%;
+  background-color: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .title {
