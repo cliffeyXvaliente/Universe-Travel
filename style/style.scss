@@ -83,15 +83,15 @@
 
 
         .title {
-            font-family   : 'Dosis', sans-serif;
-            display       : flex;
-            width         : 60%;
-            height        : 20vh;
+            font-family: 'Dosis', sans-serif;
+            display    : flex;
+            width      : 60%;
+
             color         : white;
             border-radius : 0.4rem;
             letter-spacing: 1rem;
             margin        : auto;
-   
+
 
             h1 {
                 padding: 4rem;
@@ -109,29 +109,28 @@
 
         /* MAKE RESPONSIVE INTRODUCTION */
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 600px) {
 
             #introduction {
                 background-position: left;
-                height             : 100vh;
-                width              : 100%;
+
+
 
                 .nav {
-                    padding       : 2rem 0;
-                    display       : flex;
-                    flex-direction: column;
-                    height        : auto;
+                    padding: 2rem 0;
+                    display: flex;
+                    height : auto;
 
 
                     img {
-                        height: 2rem;
-                        margin: auto;
+                      display: none;
 
                     }
 
                     ul {
-                        @include flexcenter(column);
-                        margin: 1rem;
+                        display       : flex;
+                        flex-direction: column;
+                        margin        : 1rem;
 
                         li {
 

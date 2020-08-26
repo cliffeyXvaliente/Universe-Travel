@@ -61,7 +61,7 @@
 
 .nav ul li {
   list-style: none;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', sans-serif;
 }
 
 .nav ul li .lius {
@@ -86,7 +86,6 @@
   display: -ms-flexbox;
   display: flex;
   width: 60%;
-  height: 20vh;
   color: white;
   border-radius: 0.4rem;
   letter-spacing: 1rem;
@@ -113,11 +112,9 @@
 }
 
 /* MAKE RESPONSIVE INTRODUCTION */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 600px) {
   #introduction {
     background-position: left;
-    height: 100vh;
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -137,26 +134,15 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     height: auto;
   }
   #introduction .nav img {
-    height: 2rem;
-    margin: auto;
+    display: none;
   }
   #introduction .nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
