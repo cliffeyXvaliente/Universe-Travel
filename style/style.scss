@@ -120,7 +120,7 @@
 
         /* MAKE RESPONSIVE INTRODUCTION */
 
-        @media screen and (max-width: 900px) {
+        @media screen and (max-width: 1024px) {
 
             #introduction {
                 background-position: left;
@@ -128,16 +128,21 @@
                 width              : 100%;
 
                 .nav {
-                    margin : auto;
-                    display: block;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    height: auto;
+
 
                     img {
                         height: 2rem;
                         margin: auto;
+                 
                     }
 
                     ul {
                         @include flexcenter(column);
+                        margin: 1rem;
 
                         li {
 
