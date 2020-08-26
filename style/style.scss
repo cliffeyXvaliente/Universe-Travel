@@ -11,7 +11,8 @@
         @import "./flexbox";
 
         /* Introduction 1 Page */
-        #introduction {
+        #firstpage {
+
             background       : url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
             background-repeat: no-repeat;
             background-size  : cover;
@@ -22,9 +23,9 @@
             height          : 100vh;
             width           : 100%;
             background-color: rgba(0, 0, 0, 0.705);
+
         }
 
-        .introduction {}
 
         /*! NAVIGATION BAR FROM PAGE 1 */
 
@@ -36,19 +37,15 @@
             width           : 70%;
             font-size       : 0.75rem;
             margin          : auto;
-
-
+            @include flexcenter (row);
 
             img {
+
                 height: 2rem;
                 width : 2rem;
 
-
-
             }
 
-            background-color: none;
-            @include flexcenter (row);
 
             ul {
                 display        : flex;
@@ -85,10 +82,6 @@
         }
 
 
-
-
-
-
         .title {
             font-family   : 'Dosis', sans-serif;
             display       : flex;
@@ -98,6 +91,7 @@
             border-radius : 0.4rem;
             letter-spacing: 1rem;
             margin        : auto;
+   
 
             h1 {
                 padding: 4rem;
@@ -181,15 +175,16 @@
 
 
 
-        .buttonx  {
-            padding: 6rem 0;
-  margin         : auto;
-  display        : flex;
-  justify-content: center;
-  align-items    : flex-end;
-height: 40px;
+        .buttonx {
+            padding        : 6rem 0;
+            margin         : auto;
+            display        : flex;
+            justify-content: center;
+            align-items    : flex-end;
+            height         : 40px;
+
             img {
-              
+
                 height: 4rem;
             }
 

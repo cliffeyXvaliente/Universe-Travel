@@ -7,7 +7,7 @@
 
 /* IMPORT FILES FROM SCSS FLEXBOX TO THIS FILE */
 /* Introduction 1 Page */
-#introduction {
+#firstpage {
   background: url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +27,6 @@
   width: 70%;
   font-size: 0.75rem;
   margin: auto;
-  background-color: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
