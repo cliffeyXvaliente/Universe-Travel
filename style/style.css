@@ -87,7 +87,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 60%;
-  height: 60vh;
+  height: 20vh;
   color: white;
   border-radius: 0.4rem;
   letter-spacing: 1rem;
@@ -179,28 +179,28 @@
   }
 }
 
-.buttontriangle {
+@media screen and (max-width: 1024px) {
+  .buttonx {
+    display: none;
+  }
+}
+
+.buttonx {
+  padding: 6rem 0;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: none;
-          flex-direction: none;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding: 8rem 4rem 0 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 40px;
 }
 
-.buttontriangle img {
-  height: 2rem;
-  opacity: 0.6;
+.buttonx img {
+  height: 4rem;
 }
 /*# sourceMappingURL=style.css.map */

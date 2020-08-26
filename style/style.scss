@@ -24,20 +24,7 @@
             background-color: rgba(0, 0, 0, 0.705);
         }
 
-        .introduction {
-
-
-
-   .buttontriangle {
-       padding: 0;
-   }
-
-
-
-
-
-
-        }
+        .introduction {}
 
         /*! NAVIGATION BAR FROM PAGE 1 */
 
@@ -106,7 +93,7 @@
             font-family   : 'Dosis', sans-serif;
             display       : flex;
             width         : 60%;
-            height        : 60vh;
+            height        : 20vh;
             color         : white;
             border-radius : 0.4rem;
             letter-spacing: 1rem;
@@ -176,26 +163,34 @@
 
                 }
 
-                
+
 
             }
 
 
         }
 
-     
+        @media screen and (max-width:1024px) {
 
 
-    @include flexcenter (none);
-justify-content: flex-end;
-        
-        padding:  8rem 4rem 0 0;
-        
-        img {
+            .buttonx {
 
-            height: 2rem;
-            opacity: 0.6;
-          
+                display: none;
+            }
         }
 
-    }
+
+
+        .buttonx  {
+            padding: 6rem 0;
+  margin         : auto;
+  display        : flex;
+  justify-content: center;
+  align-items    : flex-end;
+height: 40px;
+            img {
+              
+                height: 4rem;
+            }
+
+        }
