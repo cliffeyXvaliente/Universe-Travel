@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* IMPORT FILES FROM SCSS FLEXBOX TO THIS FILE */
+/* Introduction 1 Page */
+#introduction {
+  background: url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shadow {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+.introduction {
+  height: 90vh;
+  width: 100%;
+}
+
+/*! NAVIGATION BAR FROM PAGE 1 */
+.nav {
+  color: white;
+  background-color: none;
+  height: 10vh;
+  width: 70%;
+  font-size: 0.75rem;
+  margin: auto;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.nav img {
+  height: 2rem;
+  width: 2rem;
+}
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+.nav ul li {
+  list-style: none;
+  font-family: "Dosis", sans-serif;
+}
+.nav ul li .lius {
+  border: white solid 2px;
+}
+.nav ul li .lius:hover {
+  background-color: white;
+  color: black;
+}
+.nav ul li a {
+  text-decoration-line: none;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.title {
+  font-family: "Dosis", sans-serif;
+  display: flex;
+  width: 60%;
+  height: 60vh;
+  color: white;
+  border-radius: 0.4rem;
+  letter-spacing: 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title h1 {
+  padding: 4rem;
+}
+.title h3 {
+  padding: 4rem;
+}
+
+/* MAKE RESPONSIVE INTRODUCTION */
+@media screen and (max-width: 900px) {
+  #introduction {
+    background-position: left;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: none;
+  }
+  #introduction .nav {
+    margin: auto;
+    display: block;
+  }
+  #introduction .nav img {
+    height: 2rem;
+    margin: auto;
+  }
+  #introduction .nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #introduction .nav ul li {
+    padding: 1rem;
+  }
+  #introduction .title {
+    text-align: center;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: none;
+    letter-spacing: 0.6rem;
+  }
+  #introduction .title h3 {
+    display: none;
+  }
+}
