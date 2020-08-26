@@ -26,8 +26,16 @@
 
         .introduction {
 
-            height: 90vh;
-            width : 100%;
+
+
+   .buttontriangle {
+       padding: 0;
+   }
+
+
+
+
+
 
         }
 
@@ -128,16 +136,16 @@
                 width              : 100%;
 
                 .nav {
-                    
-                    display: flex;
+                    padding       : 2rem 0;
+                    display       : flex;
                     flex-direction: column;
-                    height: auto;
+                    height        : auto;
 
 
                     img {
                         height: 2rem;
                         margin: auto;
-                 
+
                     }
 
                     ul {
@@ -168,6 +176,26 @@
 
                 }
 
+                
+
             }
 
+
         }
+
+     
+
+
+    @include flexcenter (none);
+justify-content: flex-end;
+        
+        padding:  8rem 4rem 0 0;
+        
+        img {
+
+            height: 2rem;
+            opacity: 0.6;
+          
+        }
+
+    }
