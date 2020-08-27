@@ -1,61 +1,64 @@
-// PAGE VERSION FOR THE MAIN PAGE RESPONSIVE FOR PHONE DEVICE
+        // PAGE VERSION FOR THE MAIN PAGE RESPONSIVE FOR PHONE DEVICE
 
 
-@media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1024px) {
 
-    @import "./flexbox";
+            @import "./flexbox";
+
+            // NAVIGATION BAR
+            .nav {
+
+                height: 25vh;
+
+                // LOGO SATURN
+                img {
+
+                    display: none;
+                }
+
+                // LIST 
+                ul {
+
+                    display: flex;
+                    @include flexcenter(column);
 
 
-    .nav {
+                    li {
+                        margin: 1rem;
+                    }
+                }
 
-        height: 25vh;
 
-        img {
 
-            display: none;
-        }
-
-        ul {
-
-            display: flex;
-            @include flexcenter(column);
-
-            li {
-                margin: 1rem;
             }
+
+            // TITLE TABLE 
+
+
+
+            .title {
+                height        : 55vh;
+                margin        : auto;
+                text-align    : center;
+                width         : 75%;
+                letter-spacing: 0.4rem;
+
+                h1 {
+                    padding: 3rem 0;
+                }
+
+                h3 {
+                    display: none;
+                }
+            }
+
+
+
+            // BUTTON FOR THE FIRST PAGE 
+
+
+            .buttonx {
+                height: 20vh;
+            }
+
         }
-
-
-
-    }
-
-    // TITLE TABLE 
-
-
-
-    .title {
-        height        : 55vh;
-        margin        : auto;
-        text-align    : center;
-        width         : 75%;
-        letter-spacing: 0.4rem;
-
-        h1 {
-            padding: 3rem 0;
-        }
-
-        h3 {
-            display: none;
-        }
-    }
-
-
-
-    // BUTTON FOR THE FIRST PAGE 
-
-
-    .buttonx {
-        height: 20vh;
-    }
-
-}
