@@ -1,0 +1,36 @@
+@media screen and (max-width: 1024px) {
+  .nav {
+    height: 25vh;
+  }
+  .nav img {
+    display: none;
+  }
+  .nav ul {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav ul li {
+    margin: 1rem;
+  }
+
+  .title {
+    height: 55vh;
+    margin: auto;
+    text-align: center;
+    width: 75%;
+    letter-spacing: 0.4rem;
+  }
+  .title h1 {
+    padding: 3rem 0;
+  }
+  .title h3 {
+    display: none;
+  }
+
+  .buttonx {
+    height: 20vh;
+  }
+}

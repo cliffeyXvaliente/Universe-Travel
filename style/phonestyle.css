@@ -31,9 +31,11 @@
     width: 75%;
     letter-spacing: 0.4rem;
   }
-  .title h1,
-  .title h3 {
+  .title h1 {
     padding: 3rem 0;
+  }
+  .title h3 {
+    display: none;
   }
   .buttonx {
     height: 20vh;

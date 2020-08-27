@@ -12,24 +12,25 @@
   background-size: cover;
 }
 
+/*  THE BLACK SHADOW THAT COVERS THE FIRSTPAGE + IT CONTAINS THE FIRST PAGE*/
 .shadow {
-  height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.705);
 }
 
 /*! NAVIGATION BAR FROM PAGE 1 */
 .nav {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   color: white;
   background-color: none;
   height: 10vh;
   width: 70%;
   font-size: 0.75rem;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
 }
 .nav img {
   height: 2rem;
@@ -43,9 +44,11 @@
 .nav ul li {
   list-style: none;
   font-family: "Dosis", sans-serif;
+  /* THE WHITE BOX FOR THE CONTACT US */
 }
 .nav ul li .lius {
   border: white solid 2px;
+  /* MAKE BOX WHITE HOVER IT */
 }
 .nav ul li .lius:hover {
   background-color: white;
@@ -57,14 +60,14 @@
   color: white;
 }
 
+/* TITLE BOX H1 & H3 */
 .title {
+  height: 70vh;
   font-family: "Dosis", sans-serif;
   display: flex;
   width: 60%;
-  height: 20vh;
   color: white;
-  border-radius: 0.4rem;
-  letter-spacing: 1rem;
+  letter-spacing: 0.8rem;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -72,67 +75,23 @@
   flex-direction: column;
 }
 .title h1 {
-  padding: 4rem;
+  padding: 5rem;
 }
 .title h3 {
-  padding: 4rem;
+  padding: 5rem;
 }
 
-/* MAKE RESPONSIVE INTRODUCTION */
-@media screen and (max-width: 1024px) {
-  #introduction {
-    background-position: left;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: none;
-  }
-  #introduction .nav {
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  #introduction .nav img {
-    height: 2rem;
-    margin: auto;
-  }
-  #introduction .nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 1rem;
-  }
-  #introduction .nav ul li {
-    padding: 1rem;
-  }
-  #introduction .title {
-    text-align: center;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: none;
-    letter-spacing: 0.6rem;
-  }
-  #introduction .title h3 {
-    display: none;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .buttonx {
-    display: none;
-  }
-}
+/* BUTTON X */
 .buttonx {
-  padding: 6rem 0;
+  height: 20vh;
   margin: auto;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  height: 40px;
+  align-items: center;
+  flex-direction: none;
 }
 .buttonx img {
-  height: 4rem;
+  height: 2rem;
 }
+
+/* MAKE RESPONSIVE INTRODUCTION */

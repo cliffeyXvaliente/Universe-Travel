@@ -1,3 +1,6 @@
+// PAGE VERSION FOR THE MAIN PAGE RESPONSIVE FOR PHONE DEVICE
+
+
 @media screen and (max-width: 1024px) {
 
     @import "./flexbox";
@@ -13,7 +16,7 @@
         }
 
         ul {
-            
+
             display: flex;
             @include flexcenter(column);
 
@@ -26,7 +29,7 @@
 
     }
 
-
+    // TITLE TABLE 
 
 
 
@@ -37,15 +40,18 @@
         width         : 75%;
         letter-spacing: 0.4rem;
 
-        h1,
-        h3 {
+        h1 {
             padding: 3rem 0;
+        }
+
+        h3 {
+            display: none;
         }
     }
 
 
 
-
+    // BUTTON FOR THE FIRST PAGE 
 
 
     .buttonx {
