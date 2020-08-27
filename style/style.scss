@@ -1,190 +1,133 @@
-        * {
+            * {
 
-            padding   : 0;
-            margin    : 0;
-            box-sizing: border-box;
-        }
-
-
-        /* IMPORT FILES FROM SCSS FLEXBOX TO THIS FILE */
-
-        @import "./flexbox";
-
-        /* Introduction 1 Page */
-        #firstpage {
-
-            background       : url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
-            background-repeat: no-repeat;
-            background-size  : cover;
-
-        }
-
-        .shadow {
-            height          : 100vh;
-            width           : 100%;
-            background-color: rgba(0, 0, 0, 0.705);
-
-        }
-
-
-        /*! NAVIGATION BAR FROM PAGE 1 */
-
-        .nav {
-
-            color           : white;
-            background-color: none;
-            height          : 10vh;
-            width           : 70%;
-            font-size       : 0.75rem;
-            margin          : auto;
-            @include flexcenter (row);
-
-            img {
-
-                height: 2rem;
-                width : 2rem;
-
+                padding   : 0;
+                margin    : 0;
+                box-sizing: border-box;
             }
 
 
-            ul {
-                display        : flex;
-                justify-content: flex-end;
-                flex           : 1;
+            /* IMPORT FILES FROM SCSS FLEXBOX TO THIS FILE */
 
+            @import "./flexbox";
 
-                li {
-                    .lius {
-                        border: white solid 2px;
+            /* Introduction 1 Page */
 
-                        &:hover {
-                            background-color: white;
-                            color           : black;
+            #firstpage {
 
-                        }
-                    }
+                background       : url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
+                background-repeat: no-repeat;
+                background-size  : cover;
 
-                    a {
-                        text-decoration-line: none;
-                        padding             : 1rem 2rem;
-                        color               : white;
+            }
 
+            /*  THE BLACK SHADOW THAT COVERS THE FIRSTPAGE + IT CONTAINS THE FIRST PAGE*/
 
-                    }
+            .shadow {
 
+                width           : 100%;
+                background-color: rgba(0, 0, 0, 0.705);
 
-                    list-style : none;
-                    font-family: 'Dosis',
-                    sans-serif;
+            }
+
+            /*! NAVIGATION BAR FROM PAGE 1 */
+
+            .nav {
+                height: 10vh;
+                @include flexcenter (row);
+                color           : white;
+                background-color: none;
+                height          : 10vh;
+                width           : 70%;
+                font-size       : 0.75rem;
+                margin          : auto;
+
+                img {
+
+                    height: 2rem;
+                    width : 2rem;
+
                 }
-            }
-
-        }
 
 
-        .title {
-            font-family: 'Dosis', sans-serif;
-            display    : flex;
-            width      : 60%;
+                ul {
+                    display        : flex;
+                    justify-content: flex-end;
+                    flex           : 1;
 
-            color         : white;
-            border-radius : 0.4rem;
-            letter-spacing: 1rem;
-            margin        : auto;
+                    li {
 
+                        list-style : none;
+                        font-family: 'Dosis', sans-serif;
 
-            h1 {
-                padding: 4rem;
+                        /* THE WHITE BOX FOR THE CONTACT US */
+                        .lius {
+                            border: white solid 2px;
 
-            }
+                            /* MAKE BOX WHITE HOVER IT */
 
-            h3 {
-                padding: 4rem;
+                            &:hover {
+                                background-color: white;
+                                color           : black;
 
-            }
-
-            @include flexcenter (column);
-        }
-
-
-        /* MAKE RESPONSIVE INTRODUCTION */
-
-        @media screen and (max-width: 600px) {
-
-            #introduction {
-                background-position: left;
-
-
-
-                .nav {
-                    padding: 2rem 0;
-                    display: flex;
-                    height : auto;
-
-
-                    img {
-                      display: none;
-
-                    }
-
-                    ul {
-                        display       : flex;
-                        flex-direction: column;
-                        margin        : 1rem;
-
-                        li {
-
-                            padding: 1rem;
+                            }
                         }
 
+                        a {
+
+                            text-decoration-line: none;
+                            padding             : 1rem 2rem;
+                            color               : white;
+
+                        }
+
+
                     }
                 }
-
-                @include flexcenter (none);
-
-                .title {
-                    text-align: center;
-                    font-size : 1.2rem;
-                    text-align: center;
-                    padding   : none;
-
-                    letter-spacing: 0.6rem;
-
-                    h3 {
-                        display: none;
-                    }
-
-                }
-
-
 
             }
 
+            /* TITLE BOX H1 & H3 */
 
-        }
+            .title {
+                height        : 70vh;
+                font-family   : 'Dosis', sans-serif;
+                display       : flex;
+                width         : 60%;
+                color         : white;
+                letter-spacing: 0.8rem;
+                margin        : auto;
 
-        @media screen and (max-width:1024px) {
+                h1 {
+                    padding: 5rem;
 
+                }
+
+                h3 {
+                    padding: 5rem;
+
+                }
+
+                @include flexcenter (column);
+            }
+
+            /* BUTTON X */
 
             .buttonx {
+                height : 20vh;
+                display: flex;
+                margin : auto;
+                @include flexcenter (none);
 
-                display: none;
-            }
-        }
+                img {
+                    height: 2rem;
 
+                }
 
-
-        .buttonx {
-            padding        : 6rem 0;
-            margin         : auto;
-            display        : flex;
-            justify-content: center;
-            align-items    : flex-end;
-            height         : 40px;
-
-            img {
-
-                height: 4rem;
             }
 
-        }
+
+
+
+
+
+            /* MAKE RESPONSIVE INTRODUCTION */

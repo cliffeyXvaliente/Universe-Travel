@@ -13,20 +13,15 @@
   background-size: cover;
 }
 
+/*  THE BLACK SHADOW THAT COVERS THE FIRSTPAGE + IT CONTAINS THE FIRST PAGE*/
 .shadow {
-  height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.705);
 }
 
 /*! NAVIGATION BAR FROM PAGE 1 */
 .nav {
-  color: white;
-  background-color: none;
   height: 10vh;
-  width: 70%;
-  font-size: 0.75rem;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,6 +35,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  color: white;
+  background-color: none;
+  height: 10vh;
+  width: 70%;
+  font-size: 0.75rem;
+  margin: auto;
 }
 
 .nav img {
@@ -61,11 +62,13 @@
 
 .nav ul li {
   list-style: none;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Dosis', sans-serif;
+  /* THE WHITE BOX FOR THE CONTACT US */
 }
 
 .nav ul li .lius {
   border: white solid 2px;
+  /* MAKE BOX WHITE HOVER IT */
 }
 
 .nav ul li .lius:hover {
@@ -80,15 +83,16 @@
   color: white;
 }
 
+/* TITLE BOX H1 & H3 */
 .title {
+  height: 70vh;
   font-family: 'Dosis', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 60%;
   color: white;
-  border-radius: 0.4rem;
-  letter-spacing: 1rem;
+  letter-spacing: 0.8rem;
   margin: auto;
   display: flex;
   -webkit-box-pack: center;
@@ -104,88 +108,36 @@
 }
 
 .title h1 {
-  padding: 4rem;
+  padding: 5rem;
 }
 
 .title h3 {
-  padding: 4rem;
+  padding: 5rem;
 }
 
-/* MAKE RESPONSIVE INTRODUCTION */
-@media screen and (max-width: 600px) {
-  #introduction {
-    background-position: left;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: none;
-            flex-direction: none;
-  }
-  #introduction .nav {
-    padding: 2rem 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: auto;
-  }
-  #introduction .nav img {
-    display: none;
-  }
-  #introduction .nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 1rem;
-  }
-  #introduction .nav ul li {
-    padding: 1rem;
-  }
-  #introduction .title {
-    text-align: center;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: none;
-    letter-spacing: 0.6rem;
-  }
-  #introduction .title h3 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .buttonx {
-    display: none;
-  }
-}
-
+/* BUTTON X */
 .buttonx {
-  padding: 6rem 0;
-  margin: auto;
+  height: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
+  margin: auto;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: none;
+          flex-direction: none;
 }
 
 .buttonx img {
-  height: 4rem;
+  height: 2rem;
 }
+
+/* MAKE RESPONSIVE INTRODUCTION */
 /*# sourceMappingURL=style.css.map */

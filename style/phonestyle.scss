@@ -1,0 +1,55 @@
+@media screen and (max-width: 1024px) {
+
+    @import "./flexbox";
+
+
+    .nav {
+
+        height: 25vh;
+
+        img {
+
+            display: none;
+        }
+
+        ul {
+            
+            display: flex;
+            @include flexcenter(column);
+
+            li {
+                margin: 1rem;
+            }
+        }
+
+
+
+    }
+
+
+
+
+
+    .title {
+        height        : 55vh;
+        margin        : auto;
+        text-align    : center;
+        width         : 75%;
+        letter-spacing: 0.4rem;
+
+        h1,
+        h3 {
+            padding: 3rem 0;
+        }
+    }
+
+
+
+
+
+
+    .buttonx {
+        height: 20vh;
+    }
+
+}
