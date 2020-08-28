@@ -60,6 +60,22 @@
             .buttonx {
                 height: 20vh;
             }
+
+            #secondpage {
+
+                display: flex;
+                flex-direction: column;
+                background-color: black;
+             
+
+                .information{
+                    width: 100%;
+                }
+
+                .information2{
+                    width: 100%;
+                }
+            }
             
 
         }

@@ -33,4 +33,16 @@
   .buttonx {
     height: 20vh;
   }
+
+  #secondpage {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  #secondpage .information {
+    width: 100%;
+  }
+  #secondpage .information2 {
+    width: 100%;
+  }
 }

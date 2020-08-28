@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* IMPORT FILES FROM SCSS FLEXBOX TO THIS FILE */
 /* Introduction 1 Page */
 #firstpage {
@@ -52,12 +56,15 @@
 }
 .nav ul li .lius:hover {
   background-color: white;
-  color: black;
+  color: green;
 }
 .nav ul li a {
   text-decoration-line: none;
   padding: 1rem 2rem;
   color: white;
+}
+.nav ul li a:hover {
+  color: springgreen;
 }
 
 /* TITLE BOX H1 & H3 */
@@ -77,6 +84,9 @@
 .title h1 {
   padding: 5rem;
 }
+.title h1:hover {
+  color: cyan;
+}
 .title h3 {
   padding: 5rem;
 }
@@ -94,4 +104,20 @@
   height: 2rem;
 }
 
-/* MAKE RESPONSIVE INTRODUCTION */
+#secondpage {
+  display: flex;
+  flex-direction: row;
+}
+
+.information {
+  height: 100vh;
+  width: 50%;
+  background-color: tomato;
+  display: flex;
+}
+
+.information2 {
+  height: 100vh;
+  width: 50%;
+  background-color: orchid;
+}

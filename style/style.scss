@@ -5,6 +5,9 @@
                 box-sizing: border-box;
             }
 
+            html {
+                scroll-behavior: smooth;
+            }
 
             /* IMPORT FILES FROM SCSS FLEXBOX TO THIS FILE */
 
@@ -67,7 +70,7 @@
 
                             &:hover {
                                 background-color: white;
-                                color           : black;
+                                color           : green;
 
                             }
                         }
@@ -77,6 +80,13 @@
                             text-decoration-line: none;
                             padding             : 1rem 2rem;
                             color               : white;
+
+                            &:hover {
+
+                                color: springgreen;
+                            }
+
+
 
                         }
 
@@ -100,6 +110,10 @@
                 h1 {
                     padding: 5rem;
 
+                    &:hover {
+                        color: cyan;
+                    }
+
                 }
 
                 h3 {
@@ -113,8 +127,8 @@
             /* BUTTON X */
 
             .buttonx {
-                height : 20vh;
-                margin : auto;
+                height: 20vh;
+                margin: auto;
                 @include flexcenter (none);
 
                 img {
@@ -125,8 +139,30 @@
             }
 
 
+            // SECONDPAGE
 
+            #secondpage {
 
+       display: flex;
+       flex-direction: row;
+         
 
+            }
 
-            /* MAKE RESPONSIVE INTRODUCTION */
+            // INFORMATION
+
+            .information {
+
+                height          : 100vh;
+                width           : 50%;
+                background-color: tomato;
+                display         : flex;
+
+            }
+
+            .information2 {
+
+                height          : 100vh;
+                width           : 50%;
+                background-color: orchid;
+            }
