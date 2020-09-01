@@ -14,6 +14,7 @@ html {
   background: url("https://images3.alphacoders.com/915/thumb-1920-915615.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /*  THE BLACK SHADOW THAT COVERS THE FIRSTPAGE + IT CONTAINS THE FIRST PAGE*/
@@ -112,8 +113,15 @@ html {
 .information {
   height: 100vh;
   width: 50%;
-  background-color: tomato;
+  background-color: white;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.information .infotitle {
+  height: 70vh;
+  width: 80%;
+  background-color: orange;
 }
 
 .information2 {
