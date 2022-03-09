@@ -3,7 +3,7 @@
 ## Information
 
 ```
-This website is a prototype demo with HTML and CSS. 
+This website is a prototype demo using HTML and SCSS. 
 A responsive website was created in 2020-2021.
 ```
 
